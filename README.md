@@ -6,7 +6,7 @@ Network for Crowd Counting》<br>
 The journal is《Image and Vision Computing》. 
 In this project, you train a CSRNet or our SGEANet on ShanghaiTech dataset.
 
-<img src="./images/overview1.png" width = "600" height = "300" alt="图片名称" align=center />
+<img src="./images/overview1.png" width = "800" height = "400" alt="图片名称" align=center />
 
 
 ### 2.Project Organization
@@ -54,11 +54,11 @@ sh val.sh experiment/SHA/SGEANet/real_baseline_LSG_LME.yaml
 ```
 Bellow is a demo of predicted density maps from different methods.
 
-<img src="./images/show_result1.png" width = "600" height = "400" alt="图片名称" align=center />
+<img src="./images/show_result1.png" width = "800" height = "400" alt="图片名称" align=center />
 
 
 ### 5.Citation
 If you use this code for your research, please cite our paper:
 
-<img src="./images/title.png" width = "600" height = "200" alt="图片名称" align=center />
+<img src="./images/title.png" width = "800" height = "200" alt="图片名称" align=center />
 
