@@ -1,9 +1,9 @@
 # SGDANet
 
 ### 1.Introduction
-Official Implement for the Journal paper《Synthetic Guided Domain Adaptive and Edge Aware 
-Network for Crowd Counting》<br> 
-The journal is《Image and Vision Computing》. 
+Official Implement for the paper《Synthetic Guided Domain Adaptive and Edge Aware 
+Network for Crowd Counting》that published
+in the journal [《Image and Vision Computing》](https://www.journals.elsevier.com/image-and-vision-computing/). 
 In this project, you train a CSRNet or our SGEANet on ShanghaiTech dataset.
 
 <img src="./images/overview1.png" width = "700" height = "400" alt="图片名称" align=center />
