@@ -1,0 +1,50 @@
+# common setting
+common:
+  dataset_name: SHA
+  model_name: SGEANet
+  model_save_name: real_baseline_LSG
+
+  gpu_id: 2
+  data_type: SG
+  train_type: SG                # choose train func
+  test_type: base                 # choose test func
+
+  fix_shape: False
+  fix_w: 1280
+  fix_h: 720
+
+  image_folder_name: images
+  syn_folder_name: synthetic_ga
+  gt_folder_name: npy_ga_gt
+
+  gt_downsample_rate: 2
+  gt_enlarge_rate: 1
+
+# train config
+train:
+  batch_size: 4
+  feature_mode: feature_dmp
+  loss_list: ['mse','content_loss',]
+  loss_weight_list: [1,[0.001,0,0,0]]
+  optim: Adam
+  lr: 0.0001
+  decay:  0.005
+  epoch:  400
+
+  crop: True
+  crop_size: 400
+
+  train_from_scratch: True
+  syn_pretrain_path: output/SHA_SFANet2_syn_patch_denobn/best.pth.tar
+
+
+# test config
+test:
+  train_or_test: test
+  MAE: True
+  MSE: True
+  GAME: False
+  PSNR: False
+  SSIM: False
+  save_prediction: False
+  partition: True

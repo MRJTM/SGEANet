@@ -1,0 +1,42 @@
+# common setting
+common:
+  model_name: SGEANet
+  dataset_name: SHA
+  gpu_id: 0
+  data_type: base
+
+  fix_shape: False
+  fix_w: 1280
+  fix_h: 720
+
+  model_save_name: syn_baseline
+  image_folder_name: synthetic_ga
+  gt_folder_name: npy_ga_gt
+
+  gt_downsample_rate: 2
+  gt_enlarge_rate: 1
+
+# train config
+train:
+  train_type: base                # choose train func
+  batch_size: 4
+  loss_list: ['mse']
+  loss_weight_list: [1]
+  optim: Adam
+  lr: 0.0001
+  decay:  0.005
+  epoch:  400
+
+  crop: True
+  crop_size: 400
+  train_from_scratch: True
+
+
+# test config
+test:
+  test_type: base                 # choose test func
+  MAE: True
+  MSE: True
+  GAME: False
+  PSNR: False
+  SSIM: False
